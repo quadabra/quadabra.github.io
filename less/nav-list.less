@@ -1,0 +1,27 @@
+.nav-list {
+  .nolist;
+}
+
+.nav-list__item {
+  margin-bottom: 10px;
+  height: 65px;
+  width: 150px;
+  border-top: 2px solid @bgcolor1;
+  border-bottom: 2px solid @bgcolor1;
+}
+
+.nav-list__link {
+  display: block;
+  height: 65px;
+  line-height: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  color: @fontcolor;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: @fontactive;
+    text-decoration: underline;
+  }
+}

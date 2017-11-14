@@ -1,0 +1,37 @@
+.nav-content {
+  display: none;
+  height: 19px;
+  margin-top: 25px;
+  box-sizing: border-box;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &active {
+    height: 69px;
+    margin-top: 0;
+    border-top: 2px solid @bgcolor1;
+    border-bottom: 2px solid @bgcolor1;
+  }
+}
+
+.nav-content__link {
+  line-height: 19px;
+  padding: 0 10px;
+  color: @fontcolor;
+  font-weight: 500;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: @fontactive;
+  }
+}
+
+.nav-content_projects {
+  display: none;
+  &-active {
+    display: flex;
+    align-items: center;
+  }
+}

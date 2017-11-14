@@ -1,0 +1,62 @@
+@bgcolor1: #333333;
+@fontcolor: #666666;
+@fontactive: #69E83E;
+
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-regular.woff2') format('woff2'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Jura Medium'), local('Jura-Medium'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-500.woff2') format('woff2'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-500.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Jura Bold'), local('Jura-Bold'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-700.woff2') format('woff2'),
+  url('../fonts/jura-v9-cyrillic_latin_cyrillic-ext-700.woff') format('woff')
+}
+
+body {
+  font-family: Jura, sans-serif;
+  background-color: @bgcolor1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nolist() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset() {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 900px;
+  background-color: #e1e1e1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}

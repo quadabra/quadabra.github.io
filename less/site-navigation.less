@@ -1,0 +1,29 @@
+@keyframes blink {
+  0% { color: transparent;
+  }
+  50% { color: transparent;
+  }
+  51% { color: greenyellow;
+  }
+  100% { color: greenyellow;
+  }
+}
+.site-navigation {
+  grid-area: site-navigation;
+}
+
+.site-navigation__logo {
+  .reset;
+  display: block;
+  background-color: @bgcolor1;
+  font-size: 30px;
+  font-weight: 500;
+  color: greenyellow;
+}
+
+.site-navigation__logo-animate {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Личный кабинет водителя</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Geolink"
+          type="text/javascript"></script>
+</head>
+<body>
+<header class="dms-header">
+  <div class="dms-wrapper">
+    <div class="dms-container">
+      <nav class="dms-nav">
+        <article class="dms-nav__top">
+          <button class="dms-nav__btn-menu item_mobile" type="button"><span class="visually-hidden">Меню</span></button>
+          <h1 class="dms-nav__title">Мои заказы</h1>
+          <button class="dms-nav__btn-search" type="button"><span class="visually-hidden">поиск</span></button>
+          <button class="dms-nav__btn-options" type="button"><span class="visually-hidden">настройки</span></button>
+        </article>
+        <ul class="dms-nav-menu">
+          <li class="dms-nav-menu__item">
+            <a class="dms-nav-menu__link" href="#">Мои Заказы</a>
+          </li>
+          <li class="dms-nav-menu__item">
+            <a class="dms-nav-menu__link" href="#">Все Заказы</a>
+          </li>
+          <li class="dms-nav-menu__item">
+            <a class="dms-nav-menu__link" href="#">Новые заказы</a>
+          </li>
+        </ul>
+        <section class="dms-search">
+          <a class="dms-search__date" href="#">Вчера</a>
+          <a class="dms-search__date" href="#">Сегодня</a>
+          <a class="dms-search__date" href="#">Завтра</a>
+          <a class="dms-search__date dms-search__date-open" href="#">По дате</a>
+          <a class="dms-search__date dms-search__number-open" href="#">По номеру</a>
+          <form class="dms-search__form date-search" action="#" method="get">
+            <div class="dms-search__form-box">
+              <label for="date-begin">Начальная дата</label>
+              <input class="date-search__input" type="date" id="date-begin">
+            </div>
+            <div class="dms-search__form-box">
+              <label for="date-end">Конечная дата</label>
+              <input class="date-search__input" type="date" id="date-end">
+            </div>
+            <button class="dms-search__button" type="submit">Поиск</button>
+          </form>
+          <form class="dms-search__form number-search" action="#" method="get">
+            <input class="number-search__input" type="search" name="delivery-number">
+            <button class="dms-search__button" type="submit">Поиск</button>
+          </form>
+        </section>
+        <ul class="dms-options">
+          <li class="dms-options__item">
+            <a class="dms-options__link" href="#">Маршрут</a>
+          </li>
+          <li class="dms-options__item">
+            <a class="dms-options__link" href="#">Карта</a>
+          </li>
+          <li class="dms-options__item">
+            <a class="dms-options__link" href="#">Выход</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main class="dms-main">
+  <div class="dms-wrapper">
+    <div class="dms-container">
+      <h2 class="dms-main__title">Заказы на 11.11.2017</h2>
+      <article class="dms-delivery">
+        <div class="dms-delivery__container">
+          <button class="dms-delivery__options-btn" type="button"><span class="visually-hidden">Подробно</span></button>
+          <header class="dms-delivery__header">
+            <h3 class="dms-delivery__index">№30303</h3>
+            <p class="dms-delivery__driver-name">Имя водителя</p>
+            <p class="dms-delivery__client-info"><span>Имя клиента</span><a class="dms-delivery__client-tel" href="tel:+79992223333">+79992223333</a></p>
+            <p class="dms-delivery__client-address ymaps-geolink">Верейская 41 стр 14а</p>
+            <section class="dms-delivery__body"></section>
+          </header>
+        </div>
+        <section class="dms-delivery__options"></section>
+      </article>
+    </div>
+  </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

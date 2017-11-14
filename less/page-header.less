@@ -1,0 +1,39 @@
+.page-header {
+
+}
+
+.page-header__container {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: grid;
+  height: 420px;
+  grid-row-gap: 10px;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: repeat(5, 69px);
+  grid-template-areas:
+    "site-navigation page-header__item_main"
+    "site-navigation page-header__item_blog"
+    "site-navigation page-header__item_projects"
+    "site-navigation page-header__item_contacts"
+    "site-navigation page-header__item_other";
+}
+
+.page-header__item_main {
+  grid-area: page-header__item_main;
+}
+
+.page-header__item_blog {
+  grid-area: page-header__item_blog;
+}
+
+.page-header__item_projects {
+  grid-area: page-header__item_projects;
+}
+
+.page-header__item_contacts {
+  grid-area: page-header__item_contacts;
+}
+
+.page-header__item_other {
+  grid-area: page-header__item_other;
+}
